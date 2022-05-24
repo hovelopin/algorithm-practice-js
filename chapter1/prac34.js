@@ -1,1 +1,10 @@
 // 진행중 
+const unsorted = prompt('키를 입력하세요.');
+let sorted = "";
+sorted = unsorted.split(' ').sort((a,b) => a-b).join(" ");
+
+if (unsorted === sorted) {
+  console.log("Yes");
+} else {
+  console.log("No");
+}
